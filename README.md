@@ -23,7 +23,7 @@ Tools: GitHub Pages, VS Code
 ⚡ Smooth Scroll Animations
 How to Run Locally
 Clone the repository:
-git clone https://github.com/shiprachoubey540-bit/Shipra_100
+git clone https://shiprachoubey540-bit.github.io/Shipra_1009/
 Open the folder:
 cd repository-name
 Run:

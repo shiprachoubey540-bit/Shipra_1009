@@ -1,0 +1,566 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shipra | Bioinformatics Researcher &amp; Data Scientist</title>
+<meta name="description" content="Portfolio of Shipra - M.Sc. Bioinformatics student at Digital University Kerala. Open to Bioinformatics Research and Data Science roles.">
+<meta name="author" content="Shipra">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg0:#FBF5EE;--bg1:#F4EAD8;--bg2:#EAD9C4;
+  --card:#FFFFFF;
+  --border:rgba(140,90,40,0.15);--border-h:rgba(140,90,40,0.48);
+  --shadow:0 2px 18px rgba(140,90,40,0.10);--shadow-h:0 8px 32px rgba(140,90,40,0.16);
+  --indigo:#4F46E5;--indigo-dim:rgba(79,70,229,0.09);
+  --rose:#E11D48;--rose-dim:rgba(225,29,72,0.09);
+  --amber:#D97706;--amber-dim:rgba(217,119,6,0.09);
+  --gold:#F59E0B;--gold-dim:rgba(245,158,11,0.10);
+  --emerald:#059669;--emerald-dim:rgba(5,150,105,0.09);
+  --txt:#0F172A;--txt2:#475569;--txt3:#94A3B8;
+  --grad:linear-gradient(135deg,#4F46E5 0%,#E11D48 100%);
+  --grad2:linear-gradient(135deg,#E11D48 0%,#D97706 100%);
+  --ease:cubic-bezier(0.4,0,0.2,1);
+  --r-sm:8px;--r-md:14px;--r-lg:20px;--r-xl:28px
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg0);color:var(--txt);line-height:1.6;overflow-x:hidden}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg0)}
+::-webkit-scrollbar-thumb{background:var(--grad);border-radius:4px}
+.container{max-width:1160px;margin:0 auto;padding:0 1.8rem}
+.sec-alt{background:var(--bg1)}
+.grad-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.grad2-text{background:var(--grad2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.sec-eyebrow{display:flex;align-items:center;justify-content:center;gap:.8rem;margin-bottom:.85rem}
+.sec-eyebrow .line{width:52px;height:2px;background:var(--grad);border-radius:2px}
+.sec-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.9rem,3.8vw,2.65rem);font-weight:700;text-align:center;letter-spacing:-.02em;margin-bottom:.6rem;color:var(--txt)}
+.sec-sub{text-align:center;color:var(--txt2);font-size:1rem;margin-bottom:3.5rem}
+.pill{display:inline-flex;align-items:center;gap:.35rem;padding:.3rem .95rem;border-radius:100px;font-size:.76rem;font-weight:600;letter-spacing:.02em}
+.pill-indigo{background:var(--indigo-dim);color:var(--indigo);border:1px solid rgba(79,70,229,.22)}
+.pill-rose{background:var(--rose-dim);color:var(--rose);border:1px solid rgba(225,29,72,.22)}
+.pill-amber{background:var(--amber-dim);color:var(--amber);border:1px solid rgba(217,119,6,.22)}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
+.reveal.vis{opacity:1;transform:none}
+.reveal-d1{transition-delay:.12s}.reveal-d2{transition-delay:.24s}.reveal-d3{transition-delay:.36s}
+
+/* NAV */
+#nav{position:fixed;top:0;left:0;right:0;z-index:999;padding:1.1rem 0;transition:all .3s var(--ease);background:linear-gradient(135deg,#3730A3 0%,#4F46E5 100%);box-shadow:0 2px 20px rgba(55,48,163,.3)}
+#nav.scrolled{background:linear-gradient(135deg,#312E81 0%,#4338CA 100%);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.12);padding:.65rem 0;box-shadow:0 4px 24px rgba(55,48,163,.4)}
+.nav-row{display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.25rem;color:#fff;text-decoration:none;-webkit-text-fill-color:#fff}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:rgba(255,255,255,.82);text-decoration:none;font-size:.88rem;font-weight:500;transition:color .25s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:rgba(255,255,255,.8);border-radius:2px;transition:width .28s}
+.nav-links a:hover{color:#fff}.nav-links a:hover::after{width:100%}
+.nav-cta{padding:.48rem 1.15rem;border:1.5px solid rgba(255,255,255,.65);color:#fff;border-radius:var(--r-sm);text-decoration:none;font-size:.83rem;font-weight:600;transition:all .25s}
+.nav-cta:hover{background:#fff;color:var(--indigo)}
+
+/* HERO */
+#hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:7rem 0 5rem;background:linear-gradient(160deg,#FBF5EE 0%,#F4EAD8 50%,#F7EEE0 100%)}
+#hero-canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.35;pointer-events:none}
+#hero::before{content:'';position:absolute;top:20%;right:5%;width:600px;height:600px;background:radial-gradient(circle,rgba(79,70,229,.05) 0%,rgba(192,128,64,.06) 50%,transparent 70%);pointer-events:none;border-radius:50%}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center;position:relative;z-index:2}
+.hero-content{display:flex;flex-direction:column;gap:1.4rem}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;padding:.38rem 1rem;background:var(--indigo-dim);border:1px solid rgba(79,70,229,.2);border-radius:100px;font-size:.78rem;color:var(--indigo);font-weight:600;width:fit-content}
+.badge-dot{width:7px;height:7px;border-radius:50%;background:var(--emerald);animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.7)}}
+.hero-name{font-family:'Space Grotesk',sans-serif;font-size:clamp(2.6rem,5.5vw,4.2rem);font-weight:700;line-height:1.1;letter-spacing:-.025em;color:var(--txt)}
+.hero-roles{display:flex;flex-wrap:wrap;gap:.55rem}
+.hero-quote{font-size:1.02rem;color:var(--txt2);font-style:italic;line-height:1.75;border-left:3px solid var(--indigo);padding-left:1.1rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.9rem}
+.btn-primary{display:inline-flex;align-items:center;gap:.45rem;padding:.75rem 1.8rem;background:var(--grad);color:#fff;border-radius:10px;text-decoration:none;font-weight:600;font-size:.9rem;transition:all .3s var(--ease);box-shadow:0 4px 18px rgba(79,70,229,.3)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(79,70,229,.4)}
+.btn-ghost{display:inline-flex;align-items:center;gap:.45rem;padding:.75rem 1.8rem;background:#fff;border:1.5px solid var(--border);color:var(--txt);border-radius:10px;text-decoration:none;font-weight:500;font-size:.9rem;transition:all .3s var(--ease);box-shadow:var(--shadow)}
+.btn-ghost:hover{border-color:var(--indigo);color:var(--indigo);box-shadow:var(--shadow-h)}
+.hero-socials{display:flex;gap:.8rem}
+.soc-btn{width:42px;height:42px;display:flex;align-items:center;justify-content:center;background:#fff;border:1.5px solid var(--border);border-radius:10px;color:var(--txt2);text-decoration:none;transition:all .28s var(--ease);box-shadow:var(--shadow)}
+.soc-btn:hover{border-color:var(--indigo);color:var(--indigo);transform:translateY(-3px);box-shadow:var(--shadow-h)}
+.soc-btn svg{width:18px;height:18px}
+
+/* PHOTO */
+.hero-photo-col{display:flex;align-items:center;justify-content:center;position:relative}
+.photo-orbit{position:relative;width:290px;height:355px;overflow:hidden;border-radius:24px}
+.orbit-ring{position:absolute;inset:0;border-radius:24px;background:linear-gradient(135deg,#4F46E5,#E11D48,#D97706)}
+.orbit-ring::after{content:'';position:absolute;inset:4px;border-radius:22px;background:var(--bg0)}
+
+.photo-inner{position:absolute;inset:10px;border-radius:18px;overflow:hidden;border:4px solid var(--bg0);z-index:1;box-shadow:0 8px 32px rgba(79,70,229,.18)}
+.photo-inner img{width:100%;height:100%;object-fit:cover;object-position:center 12%;display:block}
+.photo-glow{position:absolute;inset:-35px;border-radius:32px;background:radial-gradient(circle,rgba(79,70,229,.1) 0%,rgba(225,29,72,.06) 50%,transparent 70%);z-index:0}
+.flt-card{position:absolute;background:#fff;border:1.5px solid var(--border);border-radius:var(--r-md);padding:.75rem 1.1rem;box-shadow:var(--shadow-h);z-index:2}
+.flt-card.fc-left{left:-10px;top:38%;animation:floatA 4s ease-in-out infinite}
+.flt-label{font-size:.67rem;color:var(--txt3);text-transform:uppercase;letter-spacing:.06em}
+.flt-val{font-size:.88rem;font-weight:700;color:var(--indigo);margin-top:2px}
+@keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.scroll-cue{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.4rem;color:var(--txt3);font-size:.72rem;animation:nudge 2.5s ease-in-out infinite;z-index:2}
+.scroll-mouse{width:22px;height:36px;border:2px solid var(--txt3);border-radius:11px;position:relative}
+.scroll-mouse::before{content:'';position:absolute;top:6px;left:50%;transform:translateX(-50%);width:3px;height:8px;background:var(--indigo);border-radius:3px;animation:dotFall 2s ease-in-out infinite}
+@keyframes dotFall{0%{transform:translateX(-50%) translateY(0);opacity:1}100%{transform:translateX(-50%) translateY(12px);opacity:0}}
+@keyframes nudge{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-7px)}}
+
+section{padding:6rem 0}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.about-text h3{font-family:'Space Grotesk',sans-serif;font-size:1.55rem;font-weight:700;margin-bottom:1rem;color:var(--txt)}
+.about-text p{color:var(--txt2);line-height:1.85;margin-bottom:.9rem}
+.about-text strong{color:var(--txt);font-weight:600}
+.hi-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.hi-card{padding:1.2rem;background:var(--card);border:1.5px solid var(--border);border-radius:var(--r-md);transition:all .25s;box-shadow:var(--shadow)}
+.hi-card:hover{border-color:var(--border-h);box-shadow:var(--shadow-h);transform:translateY(-2px)}
+.hi-icon{font-size:1.4rem;margin-bottom:.4rem}
+.hi-lbl{font-size:.7rem;color:var(--txt3);text-transform:uppercase;letter-spacing:.06em}
+.hi-val{font-size:.88rem;font-weight:600;color:var(--txt);margin-top:.2rem}
+
+/* SKILLS */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.4rem}
+.skill-card{padding:1.7rem;background:var(--card);border:1.5px solid var(--border);border-radius:var(--r-lg);transition:all .32s var(--ease);box-shadow:var(--shadow);position:relative;overflow:hidden}
+.skill-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad);opacity:0;transition:opacity .3s}
+.skill-card:hover{border-color:var(--border-h);box-shadow:var(--shadow-h);transform:translateY(-4px)}
+.skill-card:hover::before{opacity:1}
+.skill-cat-title{font-family:'Space Grotesk',sans-serif;font-size:.95rem;font-weight:700;display:flex;align-items:center;gap:.5rem;margin-bottom:1.1rem;color:var(--txt)}
+.tags-wrap{display:flex;flex-wrap:wrap;gap:.45rem}
+.sk-tag{padding:.28rem .82rem;border-radius:100px;font-size:.76rem;font-weight:500;background:var(--bg0);border:1.5px solid var(--border);color:var(--txt2);transition:all .22s;cursor:default}
+.sk-tag:hover{background:var(--indigo-dim);border-color:rgba(79,70,229,.35);color:var(--indigo)}
+
+/* GITHUB CTA */
+.github-cta{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-top:3rem;padding:1.25rem 1.7rem;background:linear-gradient(135deg,rgba(245,158,11,0.10) 0%,rgba(251,191,36,0.08) 100%);border:1.5px solid rgba(245,158,11,0.32);border-radius:var(--r-lg);position:relative;overflow:hidden}
+.github-cta::before{content:'';position:absolute;top:0;left:0;bottom:0;width:4px;background:linear-gradient(to bottom,#F59E0B,#D97706);border-radius:4px 0 0 4px}
+.github-cta-left{display:flex;align-items:center;gap:.9rem}
+.github-cta-icon{width:42px;height:42px;border-radius:10px;background:rgba(245,158,11,0.15);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.github-cta-text strong{display:block;font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;color:#92400E;margin-bottom:.15rem}
+.github-cta-text span{font-size:.84rem;color:#B45309}
+.github-cta-btn{display:inline-flex;align-items:center;gap:.45rem;padding:.55rem 1.25rem;background:linear-gradient(135deg,#F59E0B,#D97706);color:#fff;border-radius:var(--r-sm);text-decoration:none;font-size:.82rem;font-weight:700;transition:all .25s;box-shadow:0 3px 12px rgba(217,119,6,.3);white-space:nowrap}
+.github-cta-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(217,119,6,.4)}
+.github-cta-btn svg{width:15px;height:15px}
+
+/* LEADERSHIP */
+.lead-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:1.5rem}
+.lead-card{display:flex;flex-direction:column;gap:0;background:var(--card);border:1.5px solid var(--border);border-radius:var(--r-xl);transition:all .32s var(--ease);box-shadow:var(--shadow);overflow:hidden}
+.lead-card:hover{border-color:rgba(225,29,72,.38);transform:translateY(-5px);box-shadow:0 12px 36px rgba(225,29,72,.12)}
+.lead-card-header{display:flex;align-items:center;gap:1.1rem;padding:1.5rem 1.6rem 1.2rem}
+.lead-logo{width:60px;height:60px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:#FDF6EE;border:1.5px solid var(--border);border-radius:var(--r-md);overflow:hidden;padding:6px}
+.lead-logo img{width:100%;height:100%;object-fit:contain}
+.lead-header-text{}
+.lead-role{font-family:'Space Grotesk',sans-serif;font-size:1.05rem;font-weight:700;color:var(--txt);line-height:1.2}
+.lead-org{color:var(--rose);font-size:.82rem;font-weight:600;margin-top:.2rem}
+.lead-divider{height:1px;background:var(--border);margin:0 1.6rem}
+.lead-body{padding:1.2rem 1.6rem 1.5rem;display:flex;flex-direction:column;gap:.7rem}
+.lead-desc{color:var(--txt2);font-size:.84rem;line-height:1.7;margin-bottom:.2rem}
+.lead-tasks{list-style:none;display:flex;flex-direction:column;gap:.48rem}
+.lead-tasks li{display:flex;align-items:flex-start;gap:.6rem;font-size:.82rem;color:var(--txt2);line-height:1.55}
+.lead-tasks li::before{content:'▸';color:var(--indigo);font-size:.75rem;margin-top:.18rem;flex-shrink:0}
+
+/* CERTS */
+.certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.5rem}
+.cert-card{border-radius:var(--r-lg);overflow:hidden;background:var(--card);border:1.5px solid var(--border);transition:all .32s var(--ease);box-shadow:var(--shadow)}
+.cert-card:hover{border-color:var(--border-h);transform:translateY(-6px);box-shadow:var(--shadow-h)}
+.cert-thumb{height:175px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#fff;padding:1.2rem}
+.cert-thumb img.cert-logo{max-width:75%;max-height:100%;object-fit:contain;display:block}
+.cert-thumb img.cert-img{width:100%;height:100%;object-fit:contain;padding:0;transition:transform .5s var(--ease)}
+.cert-card:hover .cert-thumb img.cert-img{transform:scale(1.04)}
+.cert-thumb.bg-light{background:var(--bg2)}
+.cert-thumb.bg-pmi{background:#00B5CC;display:flex;align-items:center;justify-content:center}
+.cert-thumb.bg-pmi img{max-width:130px;max-height:130px;object-fit:contain}
+.cert-body{padding:1.35rem}
+.cert-issuer{font-size:.73rem;color:var(--indigo);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.35rem}
+.cert-name{font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;margin-bottom:.9rem;color:var(--txt)}
+.cert-btn{display:inline-flex;align-items:center;gap:.38rem;padding:.46rem 1.05rem;background:transparent;border:1.5px solid var(--indigo);color:var(--indigo);border-radius:var(--r-sm);text-decoration:none;font-size:.78rem;font-weight:600;transition:all .25s}
+.cert-btn:hover{background:var(--indigo);color:#fff}
+
+/* AWARDS */
+.awards-gallery{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.4rem;align-items:start}
+.award-card{border-radius:var(--r-xl);overflow:hidden;background:var(--card);border:1.5px solid rgba(217,119,6,.18);transition:all .32s var(--ease);box-shadow:var(--shadow)}
+.award-card:hover{border-color:rgba(217,119,6,.45);transform:translateY(-6px);box-shadow:0 12px 36px rgba(217,119,6,.15)}
+.award-img-wrap{position:relative;overflow:hidden}
+.award-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s var(--ease)}
+.award-card:hover .award-img-wrap img{transform:scale(1.05)}
+.award-img-wrap.cert-img{height:280px}
+.award-img-wrap.photo-img{height:240px}
+.award-img-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(15,23,42,.65) 0%,transparent 55%)}
+.award-body{padding:1.4rem}
+.award-pill{display:inline-flex;align-items:center;gap:.4rem;padding:.3rem .85rem;background:var(--amber-dim);color:var(--amber);border:1px solid rgba(217,119,6,.28);border-radius:100px;font-size:.75rem;font-weight:700;margin-bottom:.7rem}
+.award-title{font-family:'Space Grotesk',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:.3rem;color:var(--txt)}
+.award-sub{color:var(--txt2);font-size:.84rem;line-height:1.55}
+.award-hl{margin-top:.55rem;font-size:.8rem;font-weight:600;color:var(--amber)}
+
+/* CONTACT */
+.contact-inner{max-width:680px;margin:0 auto;text-align:center}
+.email-link{display:inline-flex;align-items:center;gap:1rem;padding:1.1rem 1.8rem;background:var(--card);border:1.5px solid var(--border);border-radius:var(--r-md);text-decoration:none;margin:1.8rem auto;transition:all .28s var(--ease);box-shadow:var(--shadow)}
+.email-link:hover{border-color:var(--indigo);box-shadow:var(--shadow-h)}
+.email-icon{width:44px;height:44px;background:var(--indigo-dim);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.25rem}
+.email-lbl{font-size:.7rem;color:var(--txt3);text-transform:uppercase;letter-spacing:.06em;text-align:left}
+.email-val{font-size:.97rem;font-weight:600;color:var(--txt);text-align:left}
+.contact-soc-row{display:flex;justify-content:center;flex-wrap:wrap;gap:.9rem}
+.csoc-btn{display:inline-flex;align-items:center;gap:.55rem;padding:.68rem 1.4rem;background:var(--card);border:1.5px solid var(--border);border-radius:10px;color:var(--txt2);text-decoration:none;font-size:.88rem;font-weight:500;transition:all .25s;box-shadow:var(--shadow)}
+.csoc-btn:hover{border-color:var(--indigo);color:var(--indigo);transform:translateY(-2px);box-shadow:var(--shadow-h)}
+.csoc-btn svg{width:17px;height:17px}
+
+footer{background:var(--txt);padding:1.8rem 0;text-align:center;color:#94A3B8;font-size:.84rem}
+footer span{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:600}
+
+@media(max-width:900px){.awards-gallery{grid-template-columns:1fr}}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr;text-align:center;gap:2.5rem}
+  .hero-photo-col{order:-1}.photo-orbit{width:210px;height:258px;margin:0 auto}
+  .flt-card{display:none}
+  .hero-roles,.hero-actions,.hero-socials{justify-content:center}
+  .hero-quote{text-align:left}
+  .about-grid{grid-template-columns:1fr;gap:2rem}
+  .nav-links{display:none}
+  .lead-grid{grid-template-columns:1fr}
+  .github-cta{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:560px){.certs-grid{grid-template-columns:1fr}.hi-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="container">
+    <div class="nav-row">
+      <a href="#hero" class="nav-logo">Shipra</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="Shipra_BIOinfResume_ATS.pdf" target="_blank" class="nav-cta">&#128196; Resume</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge"><span class="badge-dot"></span>Open to Research &amp; Data Science Roles</div>
+        <h1 class="hero-name">Hi, I'm<br><span class="grad-text">Shipra</span></h1>
+        <div class="hero-roles">
+          
+          <span class="pill pill-rose">&#128202; Data Scientist</span>
+          <span class="pill pill-amber">&#127891; M.Sc. Student &middot; DUK</span>
+        </div>
+        <p class="hero-quote">&ldquo;Curious enough to keep learning.<br>Brave enough to try.<br>Ambitious enough to dream big.&rdquo;</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Get in Touch
+          </a>
+          <a href="Shipra_BIOinfResume_ATS.pdf" target="_blank" class="btn-ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/shipra-choubey-87aa95207/" target="_blank" rel="noopener" class="soc-btn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/shiprachoubey540-bit" target="_blank" rel="noopener" class="soc-btn" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://www.credly.com/users/shipra.45429c41/badges/credly" target="_blank" rel="noopener" class="soc-btn" title="Credly">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </a>
+          <a href="mailto:shiprachoubey540@gmail.com" class="soc-btn" title="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo-col">
+        <div class="photo-orbit">
+          <div class="orbit-ring"></div>
+          <div class="photo-inner">
+            <img src="profile_new.jpg" alt="Shipra">
+          </div>
+          <div class="photo-glow"></div>
+        </div><div class="flt-val">&#129516; Bioinformatics</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><div class="scroll-mouse"></div><span>Scroll</span></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="sec-alt">
+  <div class="container">
+    <div class="sec-eyebrow"><div class="line"></div><span>&#128105;&#8205;&#128300;</span><div class="line"></div></div>
+    <h2 class="sec-title">About <span class="grad-text">Me</span></h2>
+    <p class="sec-sub">Driven by science, empowered by data</p>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h3>Bridging Biology &amp; <span class="grad-text">Data Science</span></h3>
+        <p>I'm Shipra, an M.Sc. student at <strong>Digital University Kerala</strong>, deeply passionate about the intersection of computational biology and machine learning. My work spans molecular docking, network analysis, genomics, and TinyML &mdash; all united by one mission: decoding biological complexity with data.</p>
+        <p>My primary aspiration is to grow as a <strong>Bioinformatics Researcher</strong>, contributing to drug discovery, genomics, and structural biology. I'm equally eager about <strong>Data Scientist</strong> roles where my analytical mindset and ML expertise can solve real-world challenges at scale.</p>
+        <p>Whether it's simulating protein&ndash;ligand interactions or crafting predictive models, I bring rigour, curiosity, and relentless ambition to every project.</p>
+      </div>
+      <div class="hi-grid reveal reveal-d1">
+        <div class="hi-card"><div class="hi-icon">&#127891;</div><div class="hi-lbl">Degree</div><div class="hi-val">M.Sc. Student</div></div>
+        <div class="hi-card"><div class="hi-icon">&#127963;</div><div class="hi-lbl">University</div><div class="hi-val">Digital University Kerala</div></div>
+        <div class="hi-card"><div class="hi-icon">&#129516;</div><div class="hi-lbl">Primary Goal</div><div class="hi-val">Bioinformatics Researcher</div></div>
+        <div class="hi-card"><div class="hi-icon">&#128202;</div><div class="hi-lbl">Also Open To</div><div class="hi-val">Data Scientist Roles</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="sec-eyebrow"><div class="line"></div><span>&#9889;</span><div class="line"></div></div>
+    <h2 class="sec-title">Skills &amp; <span class="grad-text">Expertise</span></h2>
+    <p class="sec-sub">A toolkit built at the frontier of biology and technology</p>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-cat-title"><span>&#129516;</span> Bioinformatics</div>
+        <div class="tags-wrap">
+          <span class="sk-tag">Molecular Docking</span><span class="sk-tag">AutoDock Vina</span><span class="sk-tag">PyMOL</span><span class="sk-tag">BLAST</span><span class="sk-tag">ClustalW</span><span class="sk-tag">Cytoscape</span><span class="sk-tag">Network Analysis</span><span class="sk-tag">Genomics</span><span class="sk-tag">Drug Discovery</span><span class="sk-tag">Protein Modelling</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-d1">
+        <div class="skill-cat-title"><span>&#128187;</span> Programming &amp; ML</div>
+        <div class="tags-wrap">
+          <span class="sk-tag">Python</span><span class="sk-tag">R</span><span class="sk-tag">Machine Learning</span><span class="sk-tag">TinyML</span><span class="sk-tag">TensorFlow</span><span class="sk-tag">Pandas</span><span class="sk-tag">NumPy</span><span class="sk-tag">Data Analysis</span><span class="sk-tag">Jupyter</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-d2">
+        <div class="skill-cat-title"><span>&#9729;</span> Cloud &amp; Tools</div>
+        <div class="tags-wrap">
+          <span class="sk-tag">Google Cloud</span><span class="sk-tag">BigQuery</span><span class="sk-tag">Data Analytics</span><span class="sk-tag">Data Visualisation</span><span class="sk-tag">Git &amp; GitHub</span><span class="sk-tag">Power BI</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- GitHub CTA -->
+    <div class="github-cta reveal" style="margin-top:2.8rem">
+      <div class="github-cta-left">
+        <div class="github-cta-icon">&#128187;</div>
+        <div class="github-cta-text">
+          <strong>Explore My Work in Action</strong>
+          <span>Hands-on projects, research implementations &amp; code experiments — all open on GitHub</span>
+        </div>
+      </div>
+      <a href="https://github.com/shiprachoubey540-bit" target="_blank" rel="noopener" class="github-cta-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        View GitHub Profile &#8599;
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP (moved here, after Skills) -->
+<section id="leadership" class="sec-alt">
+  <div class="container">
+    <div class="sec-eyebrow"><div class="line"></div><span>&#127775;</span><div class="line"></div></div>
+    <h2 class="sec-title">Leadership &amp; <span class="grad-text">Positions</span></h2>
+    <p class="sec-sub">Leading with vision, communicating with purpose</p>
+    <div class="lead-grid">
+
+      <!-- COO Card -->
+      <div class="lead-card reveal">
+        <div class="lead-card-header">
+          <div class="lead-logo"><img src="thingqbator_logo.png" alt="thingQbator logo"></div>
+          <div class="lead-header-text">
+            <div class="lead-role">Chief Operating Officer (COO)</div>
+            <div class="lead-org">ThingQbator Club &middot; Digital University Kerala</div>
+          </div>
+        </div>
+        <div class="lead-divider"></div>
+        <div class="lead-body">
+          <ul class="lead-tasks">
+            <li>Mentoring newcomers on ideation, project initiation &amp; innovation frameworks</li>
+            <li>Overseeing club operations, events, and cross-team coordination</li>
+            <li>Strategic liaison between members, faculty &amp; industry partners</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- VP Communications Card -->
+      <div class="lead-card reveal reveal-d1">
+        <div class="lead-card-header">
+          <div class="lead-logo"><img src="pmi_kerala_logo.jpg" alt="PMI Kerala Chapter Student Club logo"></div>
+          <div class="lead-header-text">
+            <div class="lead-role">Vice President &mdash; Communications</div>
+            <div class="lead-org">PMI-Kerala Students&rsquo; Club &middot; Digital University Kerala</div>
+          </div>
+        </div>
+        <div class="lead-divider"></div>
+        <div class="lead-body">
+          <ul class="lead-tasks">
+            <li>Leading communications strategy, outreach &amp; content across digital channels</li>
+            <li>Coordinating speaker sessions &amp; professional networking events</li>
+            <li>Building partnerships between students, faculty &amp; PMI professionals</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="container">
+    <div class="sec-eyebrow"><div class="line"></div><span>&#127885;</span><div class="line"></div></div>
+    <h2 class="sec-title">Certificates &amp; <span class="grad-text">Badges</span></h2>
+    <p class="sec-sub">Continuously upskilling across domains</p>
+    <div class="certs-grid">
+      <div class="cert-card reveal">
+        <div class="cert-thumb bg-light"><img src="google-cloud-data-analytics-certificate.png" alt="Google Cloud Data Analytics Certificate" class="cert-img" loading="lazy"></div>
+        <div class="cert-body">
+          <div class="cert-issuer">Google Cloud</div>
+          <div class="cert-name">Google Cloud Data Analytics Certificate</div>
+          <a href="google-cloud-data-analytics-certificate.png" target="_blank" class="cert-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Certificate
+          </a>
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-d1">
+        <div class="cert-thumb" style="background:#F0F4FF;padding:1.5rem"><img src="tata_logo.png" alt="Tata Logo" class="cert-logo" loading="lazy"></div>
+        <div class="cert-body">
+          <div class="cert-issuer">Tata Group &middot; Forage</div>
+          <div class="cert-name">Tata Data Visualisation Job Simulation</div>
+          <a href="Tata_jobsimulation.pdf" target="_blank" class="cert-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Certificate
+          </a>
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-d2">
+        <div class="cert-thumb" style="background:#EEF2FF;padding:1.5rem"><img src="ieee_logo.png" alt="IEEE Logo" class="cert-logo" loading="lazy"></div>
+        <div class="cert-body">
+          <div class="cert-issuer">IEEE</div>
+          <div class="cert-name">Tiny Machine Learning (TinyML)</div>
+          <a href="TinyML.pdf" target="_blank" class="cert-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Certificate
+          </a>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-thumb bg-light"><img src="molecular_docking_cert.png" alt="Molecular Docking Certificate" class="cert-img" loading="lazy"></div>
+        <div class="cert-body">
+          <div class="cert-issuer">MSME &middot; Govt. of India</div>
+          <div class="cert-name">Hands-on Workshop on Molecular Docking</div>
+          <a href="molecular_docking_cert.png" target="_blank" class="cert-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Certificate
+          </a>
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-d1">
+        <div class="cert-thumb bg-pmi"><img src="pmi_kickoff_badge.png" alt="PMI Kickoff Predictive Badge" loading="lazy"></div>
+        <div class="cert-body">
+          <div class="cert-issuer">PMI &middot; Project Management Institute</div>
+          <div class="cert-name">PMI Kickoff Badge &mdash; Predictive</div>
+          <a href="https://www.credly.com/users/shipra.45429c41/badges/credly" target="_blank" rel="noopener" class="cert-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View on Credly
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section id="awards" class="sec-alt">
+  <div class="container">
+    <div class="sec-eyebrow"><div class="line"></div><span>&#127942;</span><div class="line"></div></div>
+    <h2 class="sec-title">Awards &amp; <span class="grad2-text">Achievements</span></h2>
+    <p class="sec-sub">Recognition earned through innovation and impact</p>
+    <div class="awards-gallery">
+      <div class="award-card reveal">
+        <div class="award-img-wrap cert-img"><img src="ideathon_cert.jpeg" alt="ThingQbator Ideathon 2nd Position Certificate" loading="lazy"><div class="award-img-overlay"></div></div>
+        <div class="award-body">
+          <div class="award-pill">&#129360; 2nd Position</div>
+          <div class="award-title">Certificate of Achievement</div>
+          <div class="award-sub">Cisco ThingQbator Ideathon &middot; Nasscom Foundation &middot; Innovation Mela 2025</div>
+          <div class="award-hl">&#127963; Digital University Kerala</div>
+        </div>
+      </div>
+      <div class="award-card reveal reveal-d1">
+        <div class="award-img-wrap photo-img"><img src="award_ceremony.jpg" alt="Shipra receiving award" loading="lazy"><div class="award-img-overlay"></div></div>
+        <div class="award-body">
+          <div class="award-pill">&#127881; Award Ceremony</div>
+          <div class="award-title">Ideathon: Idea for Impact</div>
+          <div class="award-sub">Receiving the Runner-up prize at thingQbator Innovation Mela 2025</div>
+        </div>
+      </div>
+      <div class="award-card reveal reveal-d2">
+        <div class="award-img-wrap photo-img"><img src="award_cheque.jpg" alt="Shipra holding recognition voucher" loading="lazy"><div class="award-img-overlay"></div></div>
+        <div class="award-body">
+          <div class="award-pill">&#127873; &#8377;7,000 Voucher</div>
+          <div class="award-title">Runner-up Recognition</div>
+          <div class="award-sub">Amazon Voucher &middot; thingQbator Innovation Mela 2025 &middot; Sep 17, 2025</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="sec-eyebrow"><div class="line"></div><span>&#9993;</span><div class="line"></div></div>
+      <h2 class="sec-title">Get in <span class="grad-text">Touch</span></h2>
+      <p class="sec-sub">Research collaborations, data science opportunities, or just a great conversation &mdash; I'd love to connect.</p>
+      <a href="mailto:shiprachoubey540@gmail.com" class="email-link reveal">
+        <div class="email-icon">&#128231;</div>
+        <div><div class="email-lbl">Write to me</div><div class="email-val">shiprachoubey540@gmail.com</div></div>
+      </a>
+      <div class="contact-soc-row reveal reveal-d1">
+        <a href="https://www.linkedin.com/in/shipra-choubey-87aa95207/" target="_blank" rel="noopener" class="csoc-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn
+        </a>
+        <a href="https://github.com/shiprachoubey540-bit" target="_blank" rel="noopener" class="csoc-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>GitHub
+        </a>
+        <a href="https://www.credly.com/users/shipra.45429c41/badges/credly" target="_blank" rel="noopener" class="csoc-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Credly Badges
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>Built with &#10084;&#65039; &nbsp;&middot;&nbsp; <span>Shipra</span> &nbsp;&copy;&nbsp; 2026</p>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>60);},{passive:true});
+const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}});});
+(function(){
+  const canvas=document.getElementById('hero-canvas');const ctx=canvas.getContext('2d');
+  function resize(){canvas.width=window.innerWidth;canvas.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize,{passive:true});
+  const COLORS=['#4F46E5','#E11D48','#D97706','#059669','#7C3AED'];
+  const NUM=75,pts=[];
+  class Pt{constructor(){this.reset();}reset(){this.x=Math.random()*canvas.width;this.y=Math.random()*canvas.height;this.r=Math.random()*2+0.5;this.vx=(Math.random()-.5)*.4;this.vy=(Math.random()-.5)*.4;this.a=Math.random()*.45+.2;this.c=COLORS[Math.floor(Math.random()*COLORS.length)];}
+  move(){this.x+=this.vx;this.y+=this.vy;if(this.x<0||this.x>canvas.width)this.vx*=-1;if(this.y<0||this.y>canvas.height)this.vy*=-1;}
+  draw(){ctx.beginPath();ctx.arc(this.x,this.y,this.r,0,Math.PI*2);ctx.fillStyle=this.c;ctx.globalAlpha=this.a;ctx.fill();}}
+  for(let i=0;i<NUM;i++)pts.push(new Pt());
+  function connect(){for(let i=0;i<pts.length;i++){for(let j=i+1;j<pts.length;j++){const dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<115){ctx.beginPath();ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);ctx.strokeStyle=pts[i].c;ctx.globalAlpha=(1-d/115)*.14;ctx.lineWidth=.8;ctx.stroke();}}}}
+  function frame(){ctx.clearRect(0,0,canvas.width,canvas.height);ctx.globalAlpha=1;pts.forEach(p=>{p.move();p.draw();});connect();requestAnimationFrame(frame);}
+  frame();
+})();
+</script>
+</body>
+</html>

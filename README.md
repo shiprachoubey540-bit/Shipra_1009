@@ -21,10 +21,4 @@ Tools: GitHub Pages, VS Code
 🎯 Skills Display
 🎨 Fully Responsive Design
 ⚡ Smooth Scroll Animations
-How to Run Locally
-Clone the repository:
-git clone https://shiprachoubey540-bit.github.io/Shipra_1009/
-Open the folder:
-cd repository-name
-Run:
-Open index.html in your browser
+
